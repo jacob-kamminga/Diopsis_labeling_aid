@@ -28,7 +28,7 @@ To properly cite the dataset use: https://zenodo.org/records/10853097
 
 ```bash
 # Clone the repository
-git clone gh repo clone jacob-kamminga/Diopsis_labeling_aid
+git clone https://github.com/jacob-kamminga/Diopsis_labeling_aid.git
 cd Diopsis_labeling_aid
 
 # Create a virtual environment (optional but recommended)
@@ -37,4 +37,12 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
+##Usage
+To run the application:
+
+```bash
+flask run
+```
+Navigate to http://127.0.0.1:5000/ in your web browser to start exploring the taxonomic tree.

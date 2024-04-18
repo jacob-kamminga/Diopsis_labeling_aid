@@ -38,7 +38,10 @@ def taxon_page(taxon_name):
     children = taxonomic_tree.get(taxon_name, [])
     # Fetch images associated with this taxon
     images = classification_labels_df[classification_labels_df['deepest_name'] == taxon_name].head(100)
-    image_files = [f"{image}.jpg" if not image.endswith('.jpg') else image for image in images['basename'].tolist()]
+    # Randomly sample up to 100 images from those available
+    sample_size = min(100, len(images))  # Adjust sample size if less than 100 images are available
+    sampled_images = images.sample(n=sample_size)  # Randomly sample images , random_state=42
+    image_files = [f"{image}.jpg" if not image.endswith('.jpg') else image for image in sampled_images['basename'].tolist()]
     return render_template('taxon_page.html', taxon_name=taxon_name, children=children, images=image_files)
 
 if __name__ == '__main__':

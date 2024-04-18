@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Main Page</h1>
+    <ul>
+        {% for taxon in taxa %}
+        <li><a href="{{ url_for('taxon_page', taxon_name=taxon) }}">{{ taxon }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

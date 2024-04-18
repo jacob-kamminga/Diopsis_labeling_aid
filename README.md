@@ -1,7 +1,7 @@
 # Diopsis Annotation Aid 
 ## Taxonomic Tree Visualization
 
-This Flask-based web application provides an interactive visualization of a taxonomic tree, allowing users to explore different taxonomic classes and view images associated with each taxon. Each taxon is linked to a dedicated page that displays its child taxonomic classes and a sample of images, enhancing both educational and research-oriented functionalities.
+This Flask-based web application provides an interactive visualization of a taxonomic tree, allowing users to explore different taxonomic classes and view images associated with each taxon. Each taxon is linked to a dedicated page that displays its child taxonomic classes and a sample of images.
 
 ## Features
 

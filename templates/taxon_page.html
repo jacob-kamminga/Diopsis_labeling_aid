@@ -4,21 +4,22 @@
     <title>{{ taxon_name }}</title>
     <style>
         img {
-            width: 150px;  /* Adjust the width as needed */
-            height: 150px; /* Adjust the height as needed */
-            object-fit: cover; /* Ensures images cover the area without distorting aspect ratio */
+            width: 150px; height: 150px;
+            object-fit: cover;
         }
         .container {
             margin-top: 20px;
         }
-        .back-button {
+        .back-button, .breadcrumbs {
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
-<div class="back-button">
-        <a href="javascript:history.back()">Go Back</a>
+    <div class="breadcrumbs">
+        {% for crumb in breadcrumbs %}
+            <a href="{{ crumb.url }}">{{ crumb.name }}</a> &gt;
+        {% endfor %}
     </div>
     <h1>{{ taxon_name }}</h1>
     <h2>Subcategories</h2>
@@ -31,6 +32,11 @@
     <div class="container">
         {% for image in images %}
         <img src="{{ url_for('static', filename=image) }}" alt="{{ image }}">
+        {% endfor %}
+    </div>
+    <div class="breadcrumbs">
+        {% for crumb in breadcrumbs %}
+            <a href="{{ crumb.url }}">{{ crumb.name }}</a> &gt;
         {% endfor %}
     </div>
     <div class="back-button">

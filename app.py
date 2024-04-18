@@ -42,7 +42,13 @@ def taxon_page(taxon_name):
     sample_size = min(100, len(images))  # Adjust sample size if less than 100 images are available
     sampled_images = images.sample(n=sample_size)  # Randomly sample images , random_state=42
     image_files = [f"{image}.jpg" if not image.endswith('.jpg') else image for image in sampled_images['basename'].tolist()]
-    return render_template('taxon_page.html', taxon_name=taxon_name, children=children, images=image_files)
+
+    # Generate breadcrumbs (assuming 'name_to_ancestors.csv' gives direct lineage to each taxon)
+    ancestors = eval(name_to_ancestors_df.loc[name_to_ancestors_df['name'] == taxon_name, 'ancestors'].values[0])
+    breadcrumbs = [{'name': anc, 'url': url_for('taxon_page', taxon_name=anc)} for anc in ancestors[::-1]]
+
+    return render_template('taxon_page.html', taxon_name=taxon_name, children=children, images=image_files,
+                           breadcrumbs=breadcrumbs)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,4 +1,6 @@
 /diopsis_public_classification/images
+/venv/
+/__pycache__/
 
 
 # Project exclude paths

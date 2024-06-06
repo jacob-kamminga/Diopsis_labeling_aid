@@ -4,10 +4,11 @@
     <title>Main Page</title>
 </head>
 <body>
-    <h1>Main Page</h1>
+    <h1>DIOPSIS annotation aid</h1>
+    <p>select one of the children classes to get started</p>
     <ul>
-        {% for taxon in taxa %}
-        <li><a href="{{ url_for('taxon_page', taxon_name=taxon) }}">{{ taxon }}</a></li>
+        {% for taxon, description in children_descriptions.items() %}
+        <li><a href="{{ url_for('taxon_page', taxon_name=taxon) }}">{{ taxon }}</a> {{description}}</li>
         {% endfor %}
     </ul>
 </body>

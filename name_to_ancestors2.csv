@@ -1,0 +1,122 @@
+name,ancestors,Description
+Animalia,['Animalia'],(any animals)
+Insecta,"['Insecta', 'Animalia']",(insects)
+Hymenoptera,"['Hymenoptera', 'Insecta', 'Animalia']","(sawflies, wasps, bees and ants)"
+Lepidoptera,"['Lepidoptera', 'Insecta', 'Animalia']",(butterflies and moths)
+Diptera,"['Diptera', 'Insecta', 'Animalia']","(horse-flies, crane flies, hoverflies, mosquitoes etc.)"
+Gastropoda,"['Gastropoda', 'Animalia']",(slugs and snails)
+Geometridae,"['Geometridae', 'Lepidoptera', 'Insecta', 'Animalia']",(geometer moths)
+Hemiptera,"['Hemiptera', 'Insecta', 'Animalia']","(true bugs, e.g. cicadas, aphids, planthoppers, leafhoppers, assassin bugs, bed bugs and shield bugs)"
+Crambidae,"['Crambidae', 'Lepidoptera', 'Insecta', 'Animalia']",(grass moths)
+Arachnida,"['Arachnida', 'Animalia']","(Spiders, scorpions, ticks, mites, vinegaroons  etc.)"
+Opiliones,"['Opiliones', 'Arachnida', 'Animalia']","(harvestmen, harvesters, harvest spiders, daddy longlegs)"
+Tortricidae,"['Tortricidae', 'Lepidoptera', 'Insecta', 'Animalia']","(tortrix moths, leafroller moths)"
+Coleoptera,"['Coleoptera', 'Insecta', 'Animalia']","(Beetles, e.g. ladybirds, ladybugs)"
+Chironomidae,"['Chironomidae', 'Diptera', 'Insecta', 'Animalia']","(chironomids, nonbiting midges, lake flies)"
+Ichneumonidae,"['Ichneumonidae', 'Hymenoptera', 'Insecta', 'Animalia']","(ichneumon wasps, ichneumonid wasps, ichneumonids, Darwin wasps)"
+Araneae,"['Araneae', 'Arachnida', 'Animalia']",(spiders)
+Tipulidae,"['Tipulidae', 'Diptera', 'Insecta', 'Animalia']",(large crane flies)
+Psychodidae,"['Psychodidae', 'Diptera', 'Insecta', 'Animalia']","(drain flies, sink flies, filter flies, sewer flies, sewer gnats, true flies, moth flies)"
+Chrysomelidae,"['Chrysomelidae', 'Coleoptera', 'Insecta', 'Animalia']",(leaf beetles)
+Trichoptera,"['Trichoptera', 'Insecta', 'Animalia']","(caddisflies, sedge-flies, rail-flies)"
+Plutellidae,"['Plutellidae', 'Lepidoptera', 'Insecta', 'Animalia']",(diamondback moths)
+Notonectidae,"['Notonectidae', 'Hemiptera', 'Insecta', 'Animalia']",(backswimmers)
+Noctuidae,"['Noctuidae', 'Lepidoptera', 'Insecta', 'Animalia']","(owlet moths, armyworms)"
+Aphididae,"['Aphididae', 'Hemiptera', 'Insecta', 'Animalia']","(Aphids, Insects who suck sap of  leaves)"
+Formicidae,"['Formicidae', 'Hymenoptera', 'Insecta', 'Animalia']",(Ants)
+Pyralidae,"['Pyralidae', 'Lepidoptera', 'Insecta', 'Animalia']","(Pyralid moths, snout moths, grass moths, etc.)"
+Arctiidae,"['Arctiidae', 'Lepidoptera', 'Insecta', 'Animalia']","(Tiger moths, footmen, lichen moths, wasp moths etc.)"
+Limoniidae,"['Limoniidae', 'Diptera', 'Insecta', 'Animalia']","(Limoniid crane fly, folded wings at rest) "
+Agapeta,"['Agapeta', 'Tortricidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths under Tortricidae)
+Agapeta hamana,"['Agapeta hamana', 'Agapeta', 'Tortricidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Pale yellow moth)
+Spilosoma,"['Spilosoma', 'Arctiidae', 'Lepidoptera', 'Insecta', 'Animalia']","(Moth, Palpi short, porrect (extending forward) and fringed with hair)"
+Spilosoma urticae,"['Spilosoma urticae', 'Spilosoma', 'Arctiidae', 'Lepidoptera', 'Insecta', 'Animalia']","(Water ermine, moth, hindwings always without black dots)"
+Idaea,"['Idaea', 'Geometridae', 'Lepidoptera', 'Insecta', 'Animalia']","(Hyriogona, moth)"
+Yponomeutidae,"['Yponomeutidae', 'Lepidoptera', 'Insecta', 'Animalia']","(ermine moths, white ermine)"
+Yponomeuta,"['Yponomeuta', 'Yponomeutidae', 'Lepidoptera', 'Insecta', 'Animalia']","(Cherry ermine moth, white head, forewings light grey)"
+Carabidae,"['Carabidae', 'Coleoptera', 'Insecta', 'Animalia']",(Ground beetle)
+Curculionidae,"['Curculionidae', 'Coleoptera', 'Insecta', 'Animalia']","(snout beetles, true weevils)"
+Cantharidae,"['Cantharidae', 'Coleoptera', 'Insecta', 'Animalia']","(Soldier beetles, due to their red coats)"
+Coccinellidae,"['Coccinellidae', 'Coleoptera', 'Insecta', 'Animalia']","(Ladybugs, Ladybirds)"
+Staphylinidae,"['Staphylinidae', 'Coleoptera', 'Insecta', 'Animalia']",(Rove beetles)
+Corixidae,"['Corixidae', 'Hemiptera', 'Insecta', 'Animalia']",((lesser) water boatman)
+Cicadellidae,"['Cicadellidae', 'Hemiptera', 'Insecta', 'Animalia']",(Leafhopper)
+Cercopidae,"['Cercopidae', 'Hemiptera', 'Insecta', 'Animalia']","(Froghoppers, spittlebugs)"
+Erebidae,"['Erebidae', 'Lepidoptera', 'Insecta', 'Animalia']","(macromoth groups, e.g. underwings, litter moths etc.)"
+Entognatha,"['Entognatha', 'Animalia']","(wingless, ametobolous arthropods)"
+Collembola,"['Collembola', 'Entognatha', 'Animalia']",(Springtails)
+Tomoceridae,"['Tomoceridae', 'Collembola', 'Entognatha', 'Animalia']","(Entomobryomorpha, Springtails)"
+Hydroptilidae,"['Hydroptilidae', 'Trichoptera', 'Insecta', 'Animalia']","(Caddisflies, microcaddisflies, purse-case caddisflies)"
+Asilidae,"['Asilidae', 'Diptera', 'Insecta', 'Animalia']","(Robber fly family, assassin flies)"
+Cecidomyiidae,"['Cecidomyiidae', 'Diptera', 'Insecta', 'Animalia']","(Gall midges, gall gnats)"
+Culicidae,"['Culicidae', 'Diptera', 'Insecta', 'Animalia']",(Mosquitoes)
+Empididae,"['Empididae', 'Diptera', 'Insecta', 'Animalia']","(dagger flies, balloon flies, dance flies)"
+Sarcophagidae,"['Sarcophagidae', 'Diptera', 'Insecta', 'Animalia']",(flesh flies)
+Tachinidae,"['Tachinidae', 'Diptera', 'Insecta', 'Animalia']","(tachinid flies, tachinids)"
+Syrphidae,"['Syrphidae', 'Diptera', 'Insecta', 'Animalia']","(Hoverflies, flower flies, syrphids)"
+Sepsidae,"['Sepsidae', 'Diptera', 'Insecta', 'Animalia']","(black scavenger flies, ensign flies)"
+Auchenorrhyncha indet.,"['Auchenorrhyncha indet.', 'Hemiptera', 'Insecta', 'Animalia']",(Planthopper)
+Chrysoteuchia,"['Chrysoteuchia', 'Crambidae', 'Lepidoptera', 'Insecta', 'Animalia']","(moths, cranberry girdler etc.)"
+Chrysoteuchia culmella,"['Chrysoteuchia culmella', 'Chrysoteuchia', 'Crambidae', 'Lepidoptera', 'Insecta', 'Animalia']",(garden grass-veneer)
+Miridae,"['Miridae', 'Hemiptera', 'Insecta', 'Animalia']","(capsidae, capsid bugs, mirid bugs, plant bugs, leaf bugs, grass bugs)"
+Ephemeroptera,"['Ephemeroptera', 'Insecta', 'Animalia']","(Mayflies, shadflies, fishflies, canadian soldiers, up-winged flies)"
+Baetidae,"['Baetidae', 'Ephemeroptera', 'Insecta', 'Animalia']","(small mayflies, small minnow mayflies)"
+Dermaptera,"['Dermaptera', 'Insecta', 'Animalia']",(Earwigs)
+Rivula,"['Rivula', 'Noctuidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Rivula sericealis,"['Rivula sericealis', 'Rivula', 'Noctuidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Straw dot)
+Caenidae,"['Caenidae', 'Ephemeroptera', 'Insecta', 'Animalia']",(small squaregill mayflies)
+Cyclophora,"['Cyclophora', 'Geometridae', 'Lepidoptera', 'Insecta', 'Animalia']","(Mochas, Genus of moths)"
+Hepialidae,"['Hepialidae', 'Lepidoptera', 'Insecta', 'Animalia']","(swift moths, ghost moths)"
+Triodia,"['Triodia', 'Hepialidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Triodia sylvina,"['Triodia sylvina', 'Triodia', 'Hepialidae', 'Lepidoptera', 'Insecta', 'Animalia']","(Orange swift, orange moth)"
+Synaphe,"['Synaphe', 'Pyralidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Snout moth)
+Synaphe punctalis,"['Synaphe punctalis', 'Synaphe', 'Pyralidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Family of moths)
+Neuroptera,"['Neuroptera', 'Insecta', 'Animalia']","(net-winged insects, lacewings, mantisflies, antlions etc.)"
+Chrysopidae,"['Chrysopidae', 'Neuroptera', 'Insecta', 'Animalia']",(green lacewings)
+Anisopodidae,"['Anisopodidae', 'Diptera', 'Insecta', 'Animalia']","(gnat-like flies, wood gnats, window-gnats)"
+Ceratopogonidae,"['Ceratopogonidae', 'Diptera', 'Insecta', 'Animalia']","(no-see-ums, biting midges)"
+Eilema,"['Eilema', 'Arctiidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Orthoptera,"['Orthoptera', 'Insecta', 'Animalia']","(grasshoppers, locusts, crickets)"
+Acrididae,"['Acrididae', 'Orthoptera', 'Insecta', 'Animalia']",(short-horned grasshopper)
+Leptoceridae,"['Leptoceridae', 'Trichoptera', 'Insecta', 'Animalia']",(long-horned caddisflies)
+Pterophoridae,"['Pterophoridae', 'Lepidoptera', 'Insecta', 'Animalia']",(plume moths)
+Sciaridae,"['Sciaridae', 'Diptera', 'Insecta', 'Animalia']",(dark-winged fungus gnats)
+Fanniidae,"['Fanniidae', 'Diptera', 'Insecta', 'Animalia']",(Family of true flies)
+Coleophoridae,"['Coleophoridae', 'Lepidoptera', 'Insecta', 'Animalia']","(small moths, case-bearers, casebearing moths, case moths)"
+Fannia,"['Fannia', 'Fanniidae', 'Diptera', 'Insecta', 'Animalia']",(Genus of flies)
+Psocodea,"['Psocodea', 'Insecta', 'Animalia']","(bark lice, book lice, parasitic lice)"
+Stratiomyidae,"['Stratiomyidae', 'Diptera', 'Insecta', 'Animalia']",(soldier flies)
+Pyrausta,"['Pyrausta', 'Crambidae', 'Lepidoptera', 'Insecta', 'Animalia']",(speciose genus of moths)
+Nepticulidae,"['Nepticulidae', 'Lepidoptera', 'Insecta', 'Animalia']","(very small moths, pigmy moths, midget moths)"
+Gelechiidae,"['Gelechiidae', 'Lepidoptera', 'Insecta', 'Animalia']","(twirler moths, gelechiid moths)"
+Lomaspilis,"['Lomaspilis', 'Geometridae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Mycetophilidae,"['Mycetophilidae', 'Diptera', 'Insecta', 'Animalia']","(fungus gnats, small flies)"
+Lomaspilis marginata,"['Lomaspilis marginata', 'Lomaspilis', 'Geometridae', 'Lepidoptera', 'Insecta', 'Animalia']",(clouded border)
+Notodontidae,"['Notodontidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Family of moths)
+Tettigoniidae,"['Tettigoniidae', 'Orthoptera', 'Insecta', 'Animalia']","(katydids, bush cricets, long-horned grasshoppers)"
+Cabera,"['Cabera', 'Geometridae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Cabera exanthemata,"['Cabera exanthemata', 'Cabera', 'Geometridae', 'Lepidoptera', 'Insecta', 'Animalia']",(common wave)
+Leptophyes,"['Leptophyes', 'Tettigoniidae', 'Orthoptera', 'Insecta', 'Animalia']",(bush-crickets)
+Leptophyes punctatissima,"['Leptophyes punctatissima', 'Leptophyes', 'Tettigoniidae', 'Orthoptera', 'Insecta', 'Animalia']",(speckled bush-cricket)
+Ennomos,"['Ennomos', 'Geometridae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Mecoptera,"['Mecoptera', 'Insecta', 'Animalia']",(Stoneflies)
+Panorpidae,"['Panorpidae', 'Mecoptera', 'Insecta', 'Animalia']",(scorpionflies)
+Panorpa,"['Panorpa', 'Panorpidae', 'Mecoptera', 'Insecta', 'Animalia']",(Genus of scorpion-flies)
+Panorpa vulgaris,"['Panorpa vulgaris', 'Panorpa', 'Panorpidae', 'Mecoptera', 'Insecta', 'Animalia']",(Meadow scorpionfly)
+Hypena,"['Hypena', 'Erebidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Hypena proboscidalis,"['Hypena proboscidalis', 'Hypena', 'Erebidae', 'Lepidoptera', 'Insecta', 'Animalia']",(the snout)
+Apidae,"['Apidae', 'Hymenoptera', 'Insecta', 'Animalia']","(Bumblebees, honeybees, stingless bees, carpenter bees, orchid bees, cuckoo bees etc.)"
+Myathropa,"['Myathropa', 'Syrphidae', 'Diptera', 'Insecta', 'Animalia']",(Genus of hoverflies)
+Myathropa florea,"['Myathropa florea', 'Myathropa', 'Syrphidae', 'Diptera', 'Insecta', 'Animalia']",(batman hoverfly)
+Parasitica indet.,"['Parasitica indet.', 'Hymenoptera', 'Insecta', 'Animalia']",(Parasitican wasps)
+Arctia,"['Arctia', 'Arctiidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of tiger moths)
+Arctia caja,"['Arctia caja', 'Arctia', 'Arctiidae', 'Lepidoptera', 'Insecta', 'Animalia']","(Garden tiger moth, great tiger moth)"
+Helophilus,"['Helophilus', 'Syrphidae', 'Diptera', 'Insecta', 'Animalia']","(moderate to large hoverflies, appear bee-like)"
+Panorpa germanica,"['Panorpa germanica', 'Panorpa', 'Panorpidae', 'Mecoptera', 'Insecta', 'Animalia']",(German scorpionfly)
+Eristalis,"['Eristalis', 'Syrphidae', 'Diptera', 'Insecta', 'Animalia']",(Drone flies)
+Tholera,"['Tholera', 'Noctuidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Tholera decimalis,"['Tholera decimalis', 'Tholera', 'Noctuidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Feathered gothic)
+Notodonta,"['Notodonta', 'Notodontidae', 'Lepidoptera', 'Insecta', 'Animalia']",(Genus of moths)
+Notodonta dromedarius,"['Notodonta dromedarius', 'Notodonta', 'Notodontidae', 'Lepidoptera', 'Insecta', 'Animalia']",(the iron prominent)
+Melanostoma,"['Melanostoma', 'Syrphidae', 'Diptera', 'Insecta', 'Animalia']",(Genus of hoverflies)
+No Animalia,['No Animalia'],(Not an animal)

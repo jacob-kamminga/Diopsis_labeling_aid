@@ -3,12 +3,18 @@ from flask import Flask, render_template, request, url_for
 import pandas as pd
 import random
 
-app = Flask(__name__, static_folder='diopsis_public_classification/images', static_url_path='/images')
 
+
+# Original paths to the classification labels and images
+classification_labels_path = 'diopsis_public_classification/classification_labels.csv'
+images_path = 'diopsis_public_classification/images'
+
+# Create app instance
+app = Flask(__name__, static_folder=images_path, static_url_path='/images')
 
 # Load and prepare data
-name_to_ancestors_df = pd.read_csv('diopsis_public_classification/name_to_ancestors.csv')
-classification_labels_df = pd.read_csv('diopsis_public_classification/classification_labels.csv')
+name_to_ancestors_df = pd.read_csv('name_to_ancestors2.csv')
+classification_labels_df = pd.read_csv(classification_labels_path)
 
 
 # Build the taxonomic tree as shown previously
@@ -24,15 +30,23 @@ def build_tree(df):
 
 taxonomic_tree = build_tree(name_to_ancestors_df)
 
+def get_description(taxon):
+    try:
+        return name_to_ancestors_df[name_to_ancestors_df['name'] == taxon]["Description"].item()
+    except:
+        return ""
 
 @app.route('/')
 def main_page():
     # Display top-level taxa
-    top_level_taxa = taxonomic_tree['Animalia']  # Assuming 'Animalia' is the root if not change accordingly
-    return render_template('main_page.html', taxa=top_level_taxa)
+    taxon_name = "Animalia"
+    top_level_taxa = taxonomic_tree[taxon_name]  # Assuming 'Animalia' is the root if not change accordingly
+    children_descriptions = {child: get_description(child) for child in top_level_taxa}
+    current_description = get_description(taxon_name)
+    return render_template('main_page.html', taxon_name = taxon_name, children_descriptions=children_descriptions, current_description=current_description)
 
 
-@app.route('/taxon/<taxon_name>')
+@app.route('/taxon/<taxon_name>') # TODO figure out where to add description as part of the list of children and bread crumb
 def taxon_page(taxon_name):
     # Display children of the current taxon
     children = taxonomic_tree.get(taxon_name, [])
@@ -47,7 +61,13 @@ def taxon_page(taxon_name):
     ancestors = eval(name_to_ancestors_df.loc[name_to_ancestors_df['name'] == taxon_name, 'ancestors'].values[0])
     breadcrumbs = [{'name': anc, 'url': url_for('taxon_page', taxon_name=anc)} for anc in ancestors[::-1]]
 
-    return render_template('taxon_page.html', taxon_name=taxon_name, children=children, images=image_files,
+    # Get the description of the current taxon
+    current_description = get_description(taxon_name)
+
+    # Get descriptions for children
+    children_descriptions = {child: get_description(child) for child in children}
+
+    return render_template('taxon_page.html', taxon_name=taxon_name, current_description=current_description, children_descriptions=children_descriptions, images=image_files,
                            breadcrumbs=breadcrumbs)
 
 if __name__ == '__main__':

@@ -21,11 +21,12 @@
             <a href="{{ crumb.url }}">{{ crumb.name }}</a> &gt;
         {% endfor %}
     </div>
-    <h1>{{ taxon_name }}</h1>
+    <h1>{{ taxon_name }} </h1>
+    <p><i>{{current_description}}</i></p>
     <h2>Subcategories</h2>
     <ul>
-        {% for child in children %}
-        <li><a href="{{ url_for('taxon_page', taxon_name=child) }}">{{ child }}</a></li>
+        {% for child, description in children_descriptions.items() %}
+        <li><a href="{{ url_for('taxon_page', taxon_name=child) }}">{{ child }}</a> {{ description }}</li>
         {% endfor %}
     </ul>
     <h2>Images</h2>
